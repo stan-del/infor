@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  line-height: 1.5 !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+.light {
+  color: orangered !important;
+}
+
+#code {
+  background-image: url(https://spectrum.ieee.org/image/MzI0NDQ4Ng.jpeg) !important;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+#code h2 {
+  animation: header;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+  font-weight: bolder;
+  position: relative;
+}
+
+@keyframes header {
+  0% {
+    top: -15rem;
+  }
+  100% {
+    top: 1rem;
+  }
+}
+
+#code h4 {
+  animation: par;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+  position: relative;
+}
+
+@keyframes par {
+  0% {
+    left: -16rem;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+#code .btn {
+  width: 200px;
+  margin: auto;
+  animation: btn;
+  position: relative;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-duration: 4s;
+  animation-delay: 4s;
+}
+
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.boxes.container {
+  display: flex !important;
+  grid-gap: 2rem !important;
+  text-align: center !important;
+}
+
+.boxes.container img {
+  width: 8rem !important;
+}
+
+@media (max-width: 360px) {
+  .stan {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+  .boxes.container {
+    display: grid !important;
+    text-align: center !important;
+    padding: 2rem !important;
+  }
+  .boxes.container div {
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 280px) {
+  footer {
+    padding: 1rem !important;
+  }
+  .boxes.container .boxes.container {
+    display: grid !important;
+    text-align: center !important;
+    padding: 2rem !important;
+  }
+  .boxes.container .boxes.container div {
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+.duct.container {
+  background: #333 !important;
+  color: white !important;
+  padding: 1rem !important;
+  text-align: center !important;
+}
+
+.intro.container {
+  text-align: center !important;
+  padding-bottom: 1rem !important;
+  padding: 1rem !important;
+}
+/*# sourceMappingURL=style.css.map */
